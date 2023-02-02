@@ -36,10 +36,6 @@ try {
 }
 
 // correr server no url host:port definido em .env
-app.listen(process.env.SERVER_PORT, process.env.SERVER_HOST, () => {
-  console.log(
-    "Server up and running at http://%s:%s",
-    process.env.SERVER_HOST,
-    process.env.SERVER_PORT
-  );
+app.listen(() => {
+  console.log("Server up and running");
 });
